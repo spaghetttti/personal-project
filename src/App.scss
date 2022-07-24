@@ -1,0 +1,25 @@
+$primary-color: #a43838;
+
+@import 'animate.css';
+
+// @font-face {
+//   font-family: "Helvetica Neue";
+//   src: url('./assets/fonts/helvetica-neu.tff') format('tff')
+// }
+
+// @font-face {
+//   font-family: "La Bella Aurore";
+//   src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2')
+// }
+
+// @font-face {
+//   font-family: "Coolvetica";
+//   src: url('./assets/fonts/CoolveticaRg-Regular.woff22') format('woff2')
+// }
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Smooch+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&family=Source+Code+Pro&display=swap');
+
+input,
+textarea {
+  font-family: 'Ibarra Real Nova', serif;
+}
