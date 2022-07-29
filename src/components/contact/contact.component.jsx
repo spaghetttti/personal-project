@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
-// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../animated-letters/animated-letter.component'
@@ -20,12 +18,7 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm(
-        'gmail',
-        'template_YeJhZkgb',
-        form.current,
-        'your-token'
-      )
+      .sendForm('service_f7gpwig', 'template_1pdwbmh', form.current, 'cTFusmlbbi6oj4dfP')
       .then(
         () => {
           alert('Message successfully sent!')
@@ -49,8 +42,9 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities or full/part time positions. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            I am interested in freelance opportunities or full/part time
+            positions. However, if you have other request or question, don't
+            hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -89,25 +83,18 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Slobodan Gajić,
+          Asilbek,
           <br />
-          Serbia,
+          Tashkent, Uzbekistan
           <br />
-          Branka RadiČevića 19, 22000 <br />
-          Sremska Mitrovica <br />
-          <br />
-          <span>freelancerslobodan@gmail.com</span>
+          Email: <span>asil9802mum@gmail.com</span><br />
+          Telegram: <span>@spaghetttti</span><br />
+          Postal Code: <span>100043</span><br />
         </div>
-        {/* <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
-            </Marker>
-          </MapContainer>
-        </div> */}
       </div>
-      <Loader type="pacman" />
+      <div class="box">
+        <div class="plane"></div>
+      </div>
     </>
   )
 }

@@ -74,7 +74,9 @@ const About = () => {
         </div>
       </div>
     </div>
-    <Loader type='pacman'/>
+    <div class="box">
+        <div class="plane"></div>
+      </div>
     </>
   )
 }

@@ -34,22 +34,24 @@
   
     input[type='text'],
     input[type='email'] {
+      font-family: 'Smooch Sans', sans-serif; 
       width: 100%;
       border: 0;
       background: #115173;
       height: 50px;
-      font-size: 16px;
-      color: #fff;
+      font-size: 22px;
+      color: rgb(255, 255, 255);
       padding: 0 20px;
       box-sizing: border-box;
     }
   
     textarea {
+      font-family: 'Smooch Sans', sans-serif; 
       width: 100%;
       border: 0;
       background: #115173;
       height: 50px;
-      font-size: 16px;
+      font-size: 22px;
       color: #fff;
       padding: 20px;
       box-sizing: border-box;
@@ -57,60 +59,34 @@
     }
   
     .flat-button {
-      color: #ffd700;
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-decoration: none;
-      padding: 8px 10px;
-      border: 1px solid #ffd700;
-      float: left;
-      border-radius: 4px;
-      background: 0 0;
-      text-transform: uppercase;
-      float: right;
-      text-align: center;
-      margin-right: 10px;
+      background: #115173;
+      cursor: pointer;
+      &:hover {
+        background-color: #fff;
+        color: #115173;
+        border-color: #115173;
+      }
     }
   }
-  
-  .map-wrap {
-    background: rgba(8, 253, 216, 0.1);
-    float: right;
-    width: 53%;
-    height: 115%;
-    margin-top: -3%;
-  }
-  
-  .leaflet-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    animation: backInRight 1s 1.2s;
-    animation-fill-mode: forwards;
-  }
+
   
   .info-map {
     position: absolute;
-    background: #000;
-    top: 50px;
-    right: 30%;
+    background: #115173;
+    font-family: 'Smooch Sans', sans-serif; 
+    top: 25%;
+    right: 15%;
     z-index: 999999;
-    width: 267px;
+    width: 367px;
     padding: 20px;
     color: #fff;
-    font-family: 'Helvetica';
-    font-size: 17px;
+    font-size: 26px;
     font-weight: 300;
     opacity: 0;
     animation: fadeIn 1s 1.5s;
     animation-fill-mode: forwards;
-  
+    
     span {
-      font-size: 16px;
-  
-      span {
-        color: #ffd700;
-      }
-    }
+      font-size: 21px;
+    };
   }
