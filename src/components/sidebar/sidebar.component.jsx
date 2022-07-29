@@ -11,7 +11,6 @@ const Sidebar = () => {
     <div className="nav-bar">
         <Link className="logo" to='/'>
             <img src={LogoA} alt='logo' />
-            <img  className='sub-logo' src={LogoAFull} alt='full name'/>
         </Link>
         <nav>
             <NavLink exact='true' activeclassname='active' to='/'>

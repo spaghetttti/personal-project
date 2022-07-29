@@ -1,5 +1,4 @@
 import './logo.styles.scss'
-import LogoBigA from '../../../assets/images/bigA.svg'
 import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion'
 
 const svgVariants = {
@@ -26,7 +25,6 @@ const pathVariants = {
 const Logo = () => {
   return (
     <div className="logo-container">
-      {/* <img src={LogoBigA} alt="logo" className="solid-logo" /> */}
       <motion.svg
         width="444"
         height="616"

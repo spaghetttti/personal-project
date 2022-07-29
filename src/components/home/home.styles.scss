@@ -12,13 +12,13 @@
 
   h1 {
     color: #fff;
-    font-size: 53px;
+    font-size: 70px;
     margin: 0;
     // font-family: ;
     font-weight: 400;
 
     img {
-      width: 38px;
+      width: 52px;
       margin-left: 20px;
       opacity: 0;
       height: auto;
@@ -32,7 +32,7 @@ h2 {
     color: #fffdfd;
     margin-top: 20px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 28px;
     letter-spacing: 2px;
     animation: fadeIn 1s 1.8s backwards;
     font-family: 'Smooch Sans', sans-serif;
@@ -40,7 +40,7 @@ h2 {
 
 .flat-button {
     color: #fff;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 3px;
     font-family: 'Smooch Sans', sans-serif;
@@ -55,6 +55,5 @@ h2 {
     
     &:hover {
         background-color: #a43838;
-        color: #181818;
     }
 }
