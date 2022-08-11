@@ -6,22 +6,6 @@
   z-index: 3;
   min-height: 100vh;
 
-  .logo {
-    display: block;
-    padding: 8px 0;
-
-    img {
-      display: block;
-      margin: 8px auto;
-      width: 24px;
-      height: auto;
-
-      &.sub-logo {
-        width: 50px;
-      }
-    }
-  }
-
   nav {
     display: block;
     text-align: center;
@@ -45,6 +29,8 @@
       }
       &:hover {
         color: #a43838;
+        transform: scale(1.2);
+
       }
 
       &.active {
@@ -74,8 +60,54 @@
 
         &:hover svg {
           color: #a43838;
+          transform: scale(1.2);
+
         }
       }
+    }
+  }
+}
+
+.nav-bar-mobile {
+  display: none;
+}
+
+.logo-small {
+  display: block;
+  padding: 8px 0;
+
+  img {
+    display: block;
+    margin: 8px auto;
+    width: 24px;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav-bar {
+    opacity: 0;
+  }
+
+  .nav-bar-mobile {
+    display: block;
+    z-index: 1;
+    background: #181818;
+    height: 65px;
+  }
+
+  .logo-small {
+    img {
+      height: 40px;
+      position: absolute;
+      left: 25px;
+      width: 30px;
+      top: 5px;
     }
   }
 }

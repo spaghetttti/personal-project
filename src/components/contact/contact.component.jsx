@@ -3,6 +3,12 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../animated-letters/animated-letter.component'
 import './contact.styles.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faGithubSquare,
+  faInstagramSquare,
+  faTelegram,
+} from '@fortawesome/free-brands-svg-icons'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -18,7 +24,12 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('service_f7gpwig', 'template_1pdwbmh', form.current, 'cTFusmlbbi6oj4dfP')
+      .sendForm(
+        'service_f7gpwig',
+        'template_1pdwbmh',
+        form.current,
+        'cTFusmlbbi6oj4dfP'
+      )
       .then(
         () => {
           alert('Message successfully sent!')
@@ -87,9 +98,36 @@ const Contact = () => {
           <br />
           Tashkent, Uzbekistan
           <br />
-          Email: <span>asil9802mum@gmail.com</span><br />
-          Telegram: <span>@spaghetttti</span><br />
-          Postal Code: <span>100043</span><br />
+          Email: <span>asil9802mum@gmail.com</span>
+          <br />
+          Telegram: <span>@spaghetttti</span>
+          <br />
+          Postal Code: <span>100043</span>
+          <br />
+          <div className='list'>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://t.me/spaghetttti"
+                >
+                  <FontAwesomeIcon icon={faTelegram}  />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/spaghetttti/"
+                >
+                  <FontAwesomeIcon icon={faGithubSquare}  />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.instagram.com/spaghetttti_/"
+                >
+                  <FontAwesomeIcon icon={faInstagramSquare} />
+                </a>
+
+          </div>
         </div>
       </div>
       <div class="box">

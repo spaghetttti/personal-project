@@ -3,36 +3,22 @@ import { Link } from 'react-router-dom'
 import LogoA from '../../assets/images/Vector.svg' //A.png
 import AnimatedLetters from '../animated-letters/animated-letter.component'
 import Logo from './logo/logo.component'
-import Loader from 'react-loaders'
+import LogoAwhite from '../../assets/images/Awhite.svg'
 
 import './home.styles.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['s', 'i', 'l', ',']
-  const jobArray = [
-    'w',
-    'e',
-    'b',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    '.',
-  ]
+  const jobArray1 = ['a', ' ', 'w', 'e', 'b', ' ']
+  const jobArray2 = ['d', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
   useEffect(() => {
-    const logo2 = document.querySelectorAll('#logo1 path');
-    console.log(logo2);
-for(let i = 0; i<logo2.length; i++) {
-  console.log(`letter2 ${i} is2 ${logo2[i].getTotalLength()}`);
-}
+    //     const logo2 = document.querySelectorAll('#logo1 path');
+    //     console.log(logo2);
+    //     for(let i = 0; i<logo2.length; i++) {
+    //   console.log(`letter2 ${i} is2 ${logo2[i].getTotalLength()}`);
+    // }
 
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
@@ -52,17 +38,20 @@ for(let i = 0; i<logo2.length; i++) {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            <img src={LogoA} alt="A" />
+            {/* <img src={LogoA} alt="A" /> */}
+            <img src={LogoAwhite} alt="A" />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
               idx={15}
             />
             <br />
+            <AnimatedLetters letterClass={letterClass} strArray={jobArray1} idx={19}/>
+            <div className="new-line"></div>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={jobArray}
-              idx={19}
+              strArray={jobArray2}
+              idx={25}
             />
           </h1>
           <h2> Full Stack Developer | Student </h2>
@@ -71,9 +60,8 @@ for(let i = 0; i<logo2.length; i++) {
           </Link>
         </div>
         <Logo />
-
         <svg
-          id='logo1'
+          id="logo1"
           width="448"
           height="620"
           viewBox="0 0 448 620"
@@ -89,7 +77,6 @@ for(let i = 0; i<logo2.length; i++) {
             stroke-width="3"
           />
         </svg>
-
       </div>
       <div class="box">
         <div class="plane"></div>

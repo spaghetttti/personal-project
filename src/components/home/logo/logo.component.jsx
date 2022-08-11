@@ -1,6 +1,7 @@
 import './logo.styles.scss'
+// eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
-import {useRef, useEffect} from 'react';
+import {useEffect} from 'react';
 
 const svgVariants = {
   hidden: { rotate: -180 },
@@ -23,8 +24,6 @@ const pathVariants = {
 }
 
 const Logo = () => {
-  const ref = useRef(null);
-
   useEffect(() => {
     const logo = document.querySelectorAll('#logo1 path');
     console.log(logo);

@@ -9,7 +9,6 @@ import {
     faJsSquare,
     faReact,
   } from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
 
 import './about.styles.scss'
 
@@ -46,7 +45,7 @@ const About = () => {
         </p>
         <p>
             Currently working as a freelance full stack web developer, but 
-            happy to work and collaborate on a more complex projects with other 
+            happy to work and collaborate on more complex projects with other 
             engineers.
         </p>
       </div>
